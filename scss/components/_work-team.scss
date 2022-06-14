@@ -1,0 +1,54 @@
+.work-team {
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+
+
+.work-team__item {
+    display: block;
+    position: relative;
+
+
+    &:not(:last-child) {
+       max-width: 100%;
+       margin-right: 30px;
+}}
+
+.work-team__item {
+    margin-bottom: 30px;
+}
+
+// .work-team__item {
+
+//     width: 100%;
+
+//     @include mq(mobile-only) {
+//         &:not(:last-child) {
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     @include mq(tablet) {
+//         width: 354px;
+
+//         &:nth-child(odd) {
+//             margin-right: 30px;
+//         }
+
+//         &:nth-child(-n + 2) {
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     @include mq(desctop) {
+//         width: 270px;
+
+//         &:nth-child(-n + 2) {
+//             margin-bottom: 0;
+//         }
+
+//         &:not(:last-child) {
+//             margin-right: 30px;
+//         }
+//     }
+// }

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <title>goit-markup-hw-08</title>
+  </head>
+
+  <body class="body">
+
+<!--------------------------------header-box-------------------------------->
+
+
+
+     <section class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+
+          <a class="logo" href="">Web<span class="logo__text logo__text--dark">Studio</span></a>
+
+          <ul class="nav__list nav__list--start">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link current" href="">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="nav__list nav__list--finish">
+          <li class="nav__item">
+            <a class="nav__link" href="tel:+380961111111"
+              ><svg class="svg svg__phone" width="10" height="16">
+                <use
+                  href="./images/svg/sprite.svg#icon-smartphone"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="mailto:info@devstudio.com">
+              <svg class="svg svg__mail" width="16" height="12">
+                <use href="./images/svg/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!---------------------SHIFT-BUTTONS------------------------->
+
+    <main>
+      <section class="shift-list">
+        <div class="container">
+          <h1 class="visually-hidden">Portfolio</h1>
+          <ul class="shift-buttons-set">
+            <li class="shift-buttons-set__item">
+              <button class="shift__btn" type="button">Все</button>
+            </li>
+            <li class="shift-buttons-set__item">
+              <button class="shift__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="shift-buttons-set__item">
+              <button class="shift__btn" type="button">Приложения</button>
+            </li>
+            <li class="shift-buttons-set__item">
+              <button class="shift__btn" type="button">Дизайн</button>
+            </li>
+            <li class="shift-buttons-set__item">
+              <button class="shift__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!------------------------CARDS-------------------------->
+
+          <ul class="card__set">
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img src="./images/project-1.jpg" alt="Веб-сайт" />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Технокряк</h2>
+                <p class="card__name">Веб-сайт</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img 
+                  src="./images/project-2.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card__name">Дизайн</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-3.jpg"
+                
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Ресторан Seafood</h2>
+                <p class="card__name">Приложение</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-4.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+             </div>
+              <div class="card__content">
+                <h2 class="projects__title">Проект Prime</h2>
+                <p class="card__name">Маркетинг</p>
+              </div>
+               </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-5.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Проект Boxes</h2>
+                <p class="card__name">Приложение</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-6.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Издание Limited Edition</h2>
+                <p class="card__name">Дизайн</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-7.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Inspiration has no Borders</h2>
+                <p class="card__name">Веб-сайт</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-8.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Проект LAB</h2>
+                <p class="card__name">Маркетинг</p>
+              </div>
+              </a>
+            </li>
+
+            <li class="card__item">
+              <a class="card__link" href="">
+                <div class="card__thumb">
+                <img
+                  src="./images/project-9.jpg"
+                  
+                  alt="Веб-сайт"
+                />
+                <p class="card__text">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
+              </div>
+              <div class="card__content">
+                <h2 class="projects__title">Growing Business</h2>
+                <p class="card__name">Приложение</p>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!------------------------------FOOTER------------------------------>
+
+    <section class="footer">
+      <div class="container footer-container">
+        <div class="footer__box">
+
+          <a class="logo" href=""
+            >Web<span class="logo__text--light">Studio</span></a
+          >
+
+          <div class="adress">
+            <p class="adress__text">г.Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer__list">
+              <li class="nav__item">
+                <a class="nav__link" href="info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="join-in">
+          <p class="subscribe__text">Присоединяйтесь</p>
+          
+          <ul class="nets">
+            <li class="nets__item">
+              <a class="nets__link nets__link--dark" href="http://facebook.com">
+                <svg class="button-icon" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nets__item">
+              <a class="nets__link nets__link--dark" href="http://facebook.com">
+                <svg class="button-icon" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nets__item">
+              <a class="nets__link nets__link--dark" href="http://facebook.com">
+                <svg class="button-icon" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nets__item">
+              <a class="nets__link nets__link--dark" href="http://facebook.com">
+                <svg class="button-icon" width="20" height="20">
+                  <use
+                    href="./images/svg/sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscribe__container">
+           <p class="subscribe__text">Подпишитесь на рассылку</p>
+           
+          <form class="subscribe__form" autocomplete="off">
+            <label class="hidden-caption" for="footer-email">Почта</label>    
+            <input class="subscribe__email" name="email" type="email" id="footer-email" placeholder="E-mail">
+            
+            <button class="btn" type="submit">
+              <span class="btn__content">
+                Подписаться
+                <svg class="btn__icon" width="24" height="24">
+                  <use href="./images/svg/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+         </div>
+      </div>
+    </section>
+  </body>
+</html>

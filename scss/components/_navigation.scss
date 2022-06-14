@@ -1,0 +1,93 @@
+.header-container,
+.navigation {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.nav__list {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+
+    &--start {
+       font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--color-title);
+}
+    &--finish {
+       color: var(--color-text);
+       margin-left: auto;
+}
+    &:focus::after,
+    &:hover::after {
+      transform: scale(1);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav__list--start>.nav__item:not(:last-child),
+.nav__list--finish>.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    position: relative;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::before {
+            content: "";
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: var(--hero-text-color);
+        }
+
+     &::after {
+             content: "";
+             position: absolute;
+             display: block;
+             width: 100%;
+             height: 5px;
+             top: 44px;
+             left: 0;
+             border-radius: 2px;
+             background: #2196f3;
+             transform: scale(0);
+             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+     &:focus::after,
+     &:hover::after {
+        transform: scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                }
+}
+
+.nav__link.current {
+    color: var(--color-accent);
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.nav__link {
+    padding-left: 0;
+    margin: 0;
+}
+
+

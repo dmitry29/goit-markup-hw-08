@@ -1,0 +1,25 @@
+.about {
+    padding-top: 94px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.about__list,
+.work-team__shifts {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about__list:not(:last-child) {
+    width: 270px;
+    margin-right: 20px;
+}
+
+.about__item {
+    width: 270px;
+
+  &:not(:last-child) {
+     margin-right: 30px;
+}}
