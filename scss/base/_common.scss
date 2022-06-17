@@ -44,11 +44,7 @@ body {
 }
 
 
-.header {
-    border-bottom: 1px solid var(--background-team-color);
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
+
 
 .icon {
     display: flex;
@@ -59,10 +55,3 @@ body {
     background-color: #f5f4fa;
 }
 
-.shift-list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    &--team {
-      background-color: var(--background-team-color);
-}}

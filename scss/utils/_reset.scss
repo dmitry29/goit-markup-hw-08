@@ -23,3 +23,18 @@ img {
     height: auto;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.footer,
+.adress,
+.footer__list,
+.nav__link {
+  padding-left: 0;
+  margin: 0;
+}

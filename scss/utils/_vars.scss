@@ -17,3 +17,12 @@
     --transition-timing: 250ms;
     --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(desctop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }}

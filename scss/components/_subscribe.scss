@@ -17,10 +17,39 @@
    &:hover {
     outline: 0;
     border-color: #fff;
-}}
+    }
+
+@include mq(mobile-only) {
+    max-width: 450px;
+    width: 100%;
+    }
+
+@include mq(tablet) {
+    width: 450px;
+    }
+
+@include mq(desctop) {
+    width: 358px;
+    margin-right: 12px;
+}
+}
 
 .subscribe__container {
-    margin-left: auto;
+
+
+    @include mq(mobile-only) {
+            width: 100%;
+        }
+    
+    
+        @include mq(not-desctop) {
+            text-align: center;
+        }
+    
+    
+        @include mq(desctop) {
+            margin-left: auto;
+        }
 }
 
 .subscribe__text {
@@ -36,5 +65,21 @@
 }
 
 .subscribe__form {
-    display: flex;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mq(desctop) {
+        flex-direction: row;
+    }
+}
+
+.subscribe__label {
+    width: 100%;
+        display: block;
+    
+        @include mq(not-desctop) {
+            margin-bottom: 20px;
+        }
 }

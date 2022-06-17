@@ -2,6 +2,7 @@
 @import './utils/mixin';
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/reset';
 
     
 
@@ -9,7 +10,6 @@
 //base styles
 
 @import './base/common';
-@import './base/reset';
 @import './base/js.selectors';
 @import './base/container';
 @import './base/card-set';
@@ -20,12 +20,12 @@
 //components 
 
 @import 'components/button';
-@import 'components/navigation';
 @import 'components/modal-form';
+@import 'components/header';
 @import 'components/logo';
 @import 'components/hero';
 @import 'components/clients';
-@import 'components/_work-team';
+@import 'components/work-team';
 @import 'components/team';
 @import 'components/nets';
 @import 'components/subscribe';
