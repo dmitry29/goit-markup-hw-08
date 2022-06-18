@@ -1,65 +1,55 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--background-team-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-team-color);
 
-   &__name {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 1.19;
-         text-align: center;
-        color: var(--color-title);
-        margin-bottom: 10px;
-    }
-
-   &__text {
-      text-align: center;
-       margin-bottom: 16px;
+  &__name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 10px;
   }
 
-   &__list {
-        
-            @include mq(tablet) {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-        }
-   }
+  &__text {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+
+  &__list {
+
+    display: flex;
+    margin: -15px;
+
+    // @extend %listStyleNone;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      margin: -15px
+    }
+}
+
+.team__item {
+  width: 100%;
+  margin: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+  
 
   
 
-   .team__item {
-    
-              width: 100%;
-    
-              @include mq(mobile-only) {
-                  &:not(:last-child) {
-                      margin-bottom: 30px;
-                  }
-              }
-    
-              @include mq(tablet) {
-                  width: 354px;
-    
-                  &:nth-child(odd) {
-                      margin-right: 30px;
-                  }
-    
-                  &:nth-child(-n + 2) {
-                      margin-bottom: 30px;
-                  }
-              }
-    
-              @include mq(desctop) {
-                  width: 270px;
-    
-                  &:nth-child(-n + 2) {
-                      margin-bottom: 0;
-                  }
-    
-                  &:not(:last-child) {
-                      margin-right: 30px;
-                  }
-              }
-          }
+}
+}
