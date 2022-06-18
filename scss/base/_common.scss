@@ -19,7 +19,7 @@ body {
     color: var(--color-title);
     margin-bottom: 30px;
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desctop) {
             font-size: 36px;
             line-height: 1.17;
             margin-bottom: 50px;

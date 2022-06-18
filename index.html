@@ -32,10 +32,12 @@
 
      <section class="header">
       <div class="container header-container">
-        <nav class="navigation">
+        
           
           <a class="logo" href="">Web<span class="logo__text logo__text--dark">Studio</span></a>
 
+          
+<nav class="navigation">
           <ul class="nav__list nav__list--start">
             <li class="nav__item">
               <a class="nav__link current" href="">Студия</a>
@@ -50,16 +52,16 @@
         </nav>
 
         <ul class="nav-contact__list nav__list--finish">
-          <li class="nav__item">
-            <a class="nav__link" href="tel:+380961111111"
+          <li class="nav-contact__item">
+            <a class="nav-contact__link" href="tel:+380961111111"
               ><svg class="svg svg__phone" width="10" height="16">
                 <use href="./images/svg/sprite.svg#icon-smartphone"></use>
               </svg>
               +380961111111</a
             >
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="mailto:info@devstudio.com">
+          <li class="nav-contact__item">
+            <a class="nav-contact__link" href="mailto:info@devstudio.com">
               <svg class="svg svg__mail" width="16" height="12">
                 <use href="./images/svg/sprite.svg#icon-envelope"></use>
               </svg>
@@ -67,6 +69,8 @@
             >
           </li>
         </ul>
+
+
       </div>
     </section> 
 
@@ -81,7 +85,7 @@
         <div class="backdrop is-hidden" data-modal></div>
     </section>     
 <!--------------------------MODAL----------------------->
-<!-- 
+ 
       <div class="modal-backdrop" data-modal="">
         <div class="modal">
           <button class="btn__close" type="button" data-modal-close="" aria-label="Закрыть окно">
@@ -142,12 +146,12 @@
           </form>
         </div>
       </div>
-   </div>              -->
+               
  
 
       <!----------------------------ABOUT--------------------------->
 
-      <!-- <section class="about">
+       <section class="about">
         <div class="container">
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="about__list">
@@ -206,50 +210,59 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----------------------------WORKS-TEAM-------------------------------->
 
-      <!-- <section class="work-team">
+       <section class="work-team">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-team__shifts">
             <li class="work-team__item">
               <div class="work-team__thumb">
                 <img class="work-team__img"
-                  src="./images/img.jpg"
-                  alt="keyboard"
-                  width="370"
-                  height="294"
+                srcset="./images/work/desctop/jpg/Img_2sm.jpg   270w,                   
+                        ./images/work/desctop/jpg/Img_2@2x.jpg  540w"
+
+                        src="./images/work/desctop/jpg/Img_2sm.jpg"
+                alt="Десктопные приложения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"
                 />
-                <p class="img-overlay">Десктопные приложения</p>
+                <p class="work-team__overlay">Десктопные приложения</p>
               </div>
             </li>
             <li class="work-team__item">
               <div class="work-team__thumb">
                 <img class="work-team__img" 
-                  src="./images/img(1).jpg"
-                  alt="mobile"
-                  width="370"
-                  height="294"
+                  srcset="./images/work/desctop/jpg/Img_3sm.jpg   270w,                   
+                          ./images/work/desctop/jpg/Img_3@2x.jpg  540w"
+
+                        src="./images/work/desctop/jpg/Img_3sm.jpg"
+                alt="Десктопные приложения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"              
                 />
-                <p class="img-overlay">Мобильные приложения</p>
+                <p class="work-team__overlay">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-team__item">
               <div class="work-team__thumb">
                 <img class="work-team__img"
-                  src="./images/img(2).jpg"
-                  alt="tablet"
-                  width="370"
-                  height="294"
+                  srcset="./images/work/desctop/jpg/Img_4sm.jpg   270w,                   
+                        ./images/work/desctop/jpg/Img_4@2x.jpg  540w"
+
+                        src="./images/work/desctop/jpg/Img_4sm.jpg"
+                alt="Десктопные приложения"
+                sizes="(min-width: 1200px) 370px"
+                loading="lazy"
                 />
-                <p class="img-overlay">Дизайнерские решения</p>
+                <p class="work-team__overlay">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
       <!----------------------TEAM-------------------------->
        <section class="team">
@@ -261,11 +274,11 @@
               <div class="team__card">
                 <img class="team__img"
                  srcset="
-                  ./images/team/desctop/jpg/img-2sm.jpg  270w,
-                  ./images/team/tablet/jpg/img-2sm.jpg   354w,
+                  ./images/team/desctop/jpg/img_5sm.jpg  270w,
+                  ./images/team/tablet/jpg/img.jpg       354w,
                   ./images/team/mobile/jpg/img-2sm.jpg   450w,
-                  ./images/team/desctop/jpg/img@2x-3_1.jpg 540w,
-                  ./images/team/tablet/jpg/img@2x-3_1.jpg  708w,
+                  ./images/team/desctop/jpg/img_5@2x.jpg 540w,
+                  ./images/team/tablet/jpg/img@2x.jpg    708w,
                   ./images/team/mobile/jpg/img@2x-3_1.jpg  900w
                 "
                 src="./images/team/mobile/jpg/img-3sm.jpg"
@@ -317,11 +330,11 @@
               <div class="team__card">
                 <img class="team__img"
                  srcset="
-                  ./images/team/desctop/jpg/img-3sm.jpg  270w,
-                  ./images/team/tablet/jpg/img-3sm.jpg   354w,
+                  ./images/team/desctop/jpg/Img_6sm.jpg  270w,
+                  ./images/team/tablet/jpg/img_1.jpg     354w,
                   ./images/team/mobile/jpg/img-3sm.jpg   450w,
-                  ./images/team/desctop/jpg/img-3@2x.jpg 540w,
-                  ./images/team/tablet/jpg/img-3@2x.jpg  708w,
+                  ./images/team/desctop/jpg/Img_6@2x.jpg 540w,
+                  ./images/team/tablet/jpg/img@2x_1.jpg  708w,
                   ./images/team/mobile/jpg/img-3@2x.jpg  900w
                 "
                 src="./images/team/mobile/jpg/img-3sm.jpg"
@@ -374,11 +387,11 @@
               <div class="team__card">
                 <img class="team__img"
                  srcset="
-                  ./images/team/desctop/jpg/img-4sm.jpg  270w,
-                  ./images/team/tablet/jpg/img-4sm.jpg   354w,
+                  ./images/team/desctop/jpg/Img_7sm.jpg  270w,
+                  ./images/team/tablet/jpg/img_2.jpg     354w,
                   ./images/team/mobile/jpg/img-4sm.jpg   450w,
-                  ./images/team/desctop/jpg/img-4@2x.jpg 540w,
-                  ./images/team/tablet/jpg/img-4@2x.jpg  708w,
+                  ./images/team/desctop/jpg/Img_7@2x.jpg 540w,
+                  ./images/team/tablet/jpg/img@2x_2.jpg  708w,
                   ./images/team/mobile/jpg/img-4@2x.jpg  900w
                 "
                 src="./images/team/mobile/jpg/img-4sm.jpg"
@@ -429,11 +442,11 @@
               <div class="team__card">
                 <img class="team__img"
                  srcset="
-                  ./images/team/desctop/jpg/img-5sm.jpg  270w,
-                  ./images/team/tablet/jpg/img-5sm.jpg   354w,
+                  ./images/team/desctop/jpg/Img_8sm.jpg  270w,
+                  ./images/team/tablet/jpg/img_3.jpg     354w,
                   ./images/team/mobile/jpg/img-5sm.jpg   450w,
-                  ./images/team/desctop/jpg/img-5@2x.jpg 540w,
-                  ./images/team/tablet/jpg/img-5@2x.jpg  708w,
+                  ./images/team/desctop/jpg/Img_8@2x.jpg 540w,
+                  ./images/team/tablet/jpg/img@2x_3.jpg  708w,
                   ./images/team/mobile/jpg/img-5@2x.jpg  900w
                 "
                 src="./images/team/mobile/jpg/img-4sm.jpg"
@@ -485,7 +498,7 @@
 
       <!------------------------------CLIENTS----------------->
 
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
 
@@ -533,7 +546,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
     </main> 
 
     <!--------------------------FOOTER---------------------------->
@@ -615,6 +628,9 @@
          </div>
       </div>
     </section> 
+    
+        <!-------------------MOBILE MENU---------------->
+
     <script src="./js/modal.js"></script>
     <script
       defer
@@ -622,6 +638,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

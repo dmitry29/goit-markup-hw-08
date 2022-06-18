@@ -1,143 +1,55 @@
-// .hero {
-//         text-align: center;
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//         margin-right: auto;
-//         margin-left: auto;
-//         background-size: 1600px 600px;
-
-//         background-repeat: no-repeat;
-//         background-size: 100%;
-    
-
-
-// // версия для десктопа
-   
-//     @include mq(not-desctop) {
-       
-//             background-size: 100%;
-            
-//             background-image: url(../../images/hero/desctop/jpg/overlaysm.jpg),
-//                 linear-gradient(to right,
-//                 rgba(47, 48, 58, 0.4),
-//                 rgba(47, 48, 58, 0.4));
-//     }
-                  
-//      @include mq(desctop) {
-//              background-image: url(../../images/hero/desktop/jpg/overlay@2x.jpg),
-//                       linear-gradient(to right,
-//                      rgba(47, 48, 58, 0.4),
-//                      rgba(47, 48, 58, 0.4));            
-//             }
-       
-// //  версия для планшета
-
-//             @include mq(tablet-only) {
-                    
-//                     padding-top: 118px;
-//                     padding-bottom: 118px;
-//                    background-size: 100%;
-//                     margin-right: auto;
-//                         margin-left: auto;
-//                     background-image: url(../../images/hero/tablet/jpg/overlayimg.jpg),
-//                             linear-gradient(to right,
-//                             rgba(47, 48, 58, 0.4),
-//                             rgba(47, 48, 58, 0.4));                    
-//                 }
-                        
-//                 @include mq(tablet) {
-//                         padding-top: 118px;
-//                         padding-bottom: 118px;
-                        
-//                         background-image: url(../../images/hero/tablet/jpg/overlayimg@2x.jpg),
-//                             linear-gradient(to right,
-//                             rgba(47, 48, 58, 0.4),
-//                             rgba(47, 48, 58, 0.4));                 
-//                 }
-                
-// //  версия для планшета
-
-//                    @include mq(mobile-only) {
-//                         padding-top: 118px;
-//                         padding-bottom: 118px;
-//                         background-size: 100%;
-//                         background-image: url(../../images/hero/mobile/jpg/overlaysm.jpg),
-//                                linear-gradient(to right,
-//                                rgba(47, 48, 58, 0.4),
-//                                rgba(47, 48, 58, 0.4));       
-//                    }
-               
-//                    @include mq(mobile) {
-//                        padding-top: 118px;
-//                        padding-bottom: 118px;
-//                        background-size: 100%;
-//                        background-image: url(../../images/hero/mobile/jpg/overlay@2x.jpg),
-//                                linear-gradient(to right,
-//                                rgba(47, 48, 58, 0.4),
-//                                rgba(47, 48, 58, 0.4)); 
-//                             }
-// }
-
-// .hero__title {
-//     font-weight: 900;
-//         font-size: 26px;
-//         line-height: 1.65;
-//         text-align: center;
-//         letter-spacing: 0.06em;
-//         text-transform: uppercase;
-//         color: #ffffff;
-//         margin-bottom: 30px;
-    
-//         @media screen and (min-width: 1200px) {
-//             font-size: 44px;
-//             line-height: 1.36;
-//         }
-// }
-
-// .img-overlay {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     bottom: 0;
-//     left: auto;
-//     width: 100%;
-//     padding: 27px;
-//     background-color: rgba(47, 48, 58, 0.8);
-//     font-weight: 700;
-//     line-height: 1.14px;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: #ffffff;
-// }
 .hero {
     text-align: center;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-right: auto;
     margin-left: auto;
 
+    @include mq(mobile) {
+        max-width: 480px;
+        background-size: 480px 400px;
+    }
+
+    @include mq(tablet) {
+        max-width: 768px;
+        background-size: 768px 400px;
+    }
+
     @include mq(desctop) {
-        padding-top: 200px;
-        padding-bottom: 200px;
         max-width: 1600px;
         background-size: 1600px 600px;
+    }
+
+    @include mq(not-desctop) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    @include mq (not-desktop){
+        height: 400px;
+    }
+    @include mq (desktop){
+        max-width: 1600px;
+        height: 600px;
+    }
+
+    @include mq(mobile) {
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../images/hero/desctop/jpg/overlaysm.jpg);
+            url(../../images/hero/mobile/jpg/overlaysm.jpg);
 
         @include mq(retina) {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../images/hero/desctop/jpg/overlay@2x.jpg);
+                url(../../images/hero/mobile/jpg/overlay@2x.jpg);
         }
     }
 
-        @include mq(tablet-only) {
-        max-width: 768px;
-        background-size: 768px 400px;
+    @include mq(tablet) {
+        
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -151,21 +63,20 @@
         }
     }
 
-    @media screen and (max-width: 767px) {
-        max-width: 480px;
-        background-size: 480px 400px;
+    @include mq(desctop) {
+        
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../images/hero/mobile/jpg/overlaysm.jpg);
+            url(../../images/hero/desctop/jpg/overlaysm.jpg);
 
         @include mq(retina) {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../images/hero/mobile/jpg/overlay@2x.jpg);
+                url(../../images/hero/desctop/jpg/overlay@2x.jpg);
         }
-    }
+    }  
 }
 
 .hero__title {
@@ -177,9 +88,19 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 30px;
+     margin-left: auto;
+    margin-right: auto;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 44px;
-        line-height: 1.36;
+    @include mq(mobile-only) {
+        width: 100%;
+    }
+
+    @include mq(tablet-only) {
+        width: 360px;
+    }
+
+    @include mq(not-desctop) {
+    font-size: 26px;
+    line-height: 1.62;
     }
 }

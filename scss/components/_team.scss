@@ -21,35 +21,51 @@
   &__list {
 
     display: flex;
-    margin: -15px;
+    padding: 0;
 
-    // @extend %listStyleNone;
+   
 
-    @media screen and (max-width: 767px) {
+    @include mq(mobile-only) {
       flex-direction: column;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include mq(tablet-only) {
       flex-wrap: wrap;
-      margin: -15px
     }
 }
 
 .team__item {
-  width: 100%;
-  margin: 15px;
+max-width: 100%;
+align-content: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include mq(tablet) {
     width: 354px;
-   
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desctop) {
     width: 270px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-  
-
-  
-
 }
 }

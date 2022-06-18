@@ -5,17 +5,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 10;
     transition: opacity var(--transition-timing) var(--transition-function),
         visibility var(--transition-timing) var(--transition-function);
 }
 
-.backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .modal {
     position: absolute;
@@ -33,20 +28,42 @@
     box-shadow: 0px 1px 3px hsla(0, 0%, 0%, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        @include mq(not-desctop) {
+        width: 450px;
+    }
+
+    @include mq(desctop) {
+        width: 528px;
+    }
 }
+
+.backdrop {
+    &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+
 
 .modal__title {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+    text-align: center;
     color: var(--color-title);
 }
 
 .btn__close {
     position: absolute;
+    width: 30px;
+    height: 30px;
     top: 8px;
     right: 8px;
     display: flex;
@@ -54,14 +71,18 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 30px;
-    height: 30px;
+    
     color: #000;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
     transition: color var(--transition-timing) var(--transition-function);
+
+    &:hover .btn-close,
+    &:focus .btn-close {
+        fill: var(--color-accent);
+    }
 }
 
 .svg-link,
@@ -98,10 +119,13 @@
 
 .form__label {
     display: inline-block;
+    font-family: inherit;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+
+    color: #757575;
 }
 
 
@@ -123,6 +147,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-timing) var(--transition-function);
+    
+    &:hover,
+    &:focus {
+        border: 1px solid var(--color-accent);
+    }
+
+}
+
+.form__input {
+
+    &:focus + .form__icon {
+    fill: var(--color-hover);
+}
 }
 
 
@@ -141,6 +178,10 @@
     fill: currentColor;
     transform: translateY(-50%);
     transition: color var(--transition-timing) var(--transition-function);
+
+    &:focus-within {
+        fill: var(--color-accent);
+    }
 }
 
 .form__field.comments {
@@ -154,10 +195,17 @@
     padding: 12px 16px;
     resize: none;
     cursor: pointer;
+
     color: var(--color-title);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-timing) var(--transition-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--color-accent);
+    }
+
 }
 
 .checkbox {
@@ -167,13 +215,18 @@
     margin-bottom: 30px;
 }
 
+
 .checkbox__container {
     position: relative;
-    display: block;
+    display: flex;
     width: 16px;
     height: 15px;
     margin-right: 8px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    
 }
 
 .checkbox__form {
@@ -201,10 +254,11 @@
     transform: scale(0.2);
     opacity: 0;
     transition: transform var(--transition-timing) var(--transition-function),
-        opacity var(--transition-timing) var(--transition-function);
+                 opacity var(--transition-timing) var(--transition-function);
 }
 
 .form-icon--unchecked {
+    
     border: 2px solid var(--color-title);
     transition: border-color var(--transition-timing) var(--transition-function);
 }
@@ -218,9 +272,29 @@
     line-height: 1.71;
     cursor: pointer;
     user-select: none;
+
+    @include mq(mobile-only) {
+           font-size: 12px;
+           line-height: 1.16;
+           letter-spacing: 0.03em;
+           color: #757575;
+    }
+     @include mq(tablet-only) {
+           font-size: 12px;
+           line-height: 1.16;
+           letter-spacing: 0.03em;
+           color: #757575;
+    }
 }
 
 .checkbox__link {
     color: var(--color-accent);
     text-decoration-line: underline;
 }
+
+// ****************************************************************
+
+
+
+
+
