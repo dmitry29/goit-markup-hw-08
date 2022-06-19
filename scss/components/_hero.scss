@@ -34,7 +34,7 @@
         height: 600px;
     }
 
-    @include mq(mobile) {
+    @include mq(mobile-only) {
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -48,7 +48,7 @@
         }
     }
 
-    @include mq(tablet) {
+    @include mq(tablet-only) {
         
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
@@ -81,7 +81,7 @@
 
 .hero__title {
     font-weight: 900;
-    font-size: 26px;
+    font-size: 44px;
     line-height: 1.65;
     text-align: center;
     letter-spacing: 0.06em;
