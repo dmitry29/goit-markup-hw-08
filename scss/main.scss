@@ -5,6 +5,7 @@
 @import './utils/reset';
 
 
+
 //base styles
 
 @import './base/common';
@@ -18,8 +19,10 @@
 //components 
 
 @import 'components/button';
+@import 'components/mobile-menu';
 @import 'components/modal-form';
 @import 'components/header';
+@import 'components/shift-list';
 @import 'components/logo';
 @import 'components/hero';
 @import 'components/clients';

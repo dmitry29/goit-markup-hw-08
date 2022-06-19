@@ -1,5 +1,5 @@
 .shift-buttons-set {
-    display: flex;
+    
     justify-content: center;
     margin-top: 0;
     padding: 0;
@@ -11,12 +11,17 @@
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
-}
 
-.shift-buttons-set__item {
+
+    &__item {
     display: inline-block;
     cursor: pointer;
     border-radius: 4px;
+
+    @include mq(mobile-only) {
+      margin-bottom: 15px;
+    }
+    }
 
   &:not(:last-child) {
     margin-right: 8px;

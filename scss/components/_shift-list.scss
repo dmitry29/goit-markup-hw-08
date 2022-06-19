@@ -1,0 +1,17 @@
+.shift-list {
+     @include mq(desctop) {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+
+     @include mq(tablet-only) {
+        
+        margin-top: 60px;
+    }
+
+     @include mq(mobile-only) {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+}
