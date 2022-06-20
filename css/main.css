@@ -428,12 +428,22 @@ body {
   border-radius: 4px;
 }
 
-.shift-buttons-set__item:nth-last-child(2) {
-  margin-bottom: 0;
+@media screen and (max-width: 767.98px) {
+  .shift-buttons-set__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .shift-buttons-set__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.shift-buttons-set__item:last-child {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .shift-buttons-set__item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+  .shift-buttons-set__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
