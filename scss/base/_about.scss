@@ -3,13 +3,15 @@
     padding-left: auto;
     padding-right: auto;
 
-    @include mq(tablet) {
-    margin-bottom: 60px;
-}
+    @include mq(tablet-only) {
+      // margin-bottom: 60px;
+      padding-top: 60px;
+   }
 
-  @include mq(mobile-only) {
-    margin-bottom: 60px;
-}
+    @include mq(mobile-only) {
+      // margin-bottom: 60px;
+      padding-top: 60px;
+   }
 
      &__title {
     font-weight: 700;

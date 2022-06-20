@@ -5,7 +5,14 @@
      @include mq(not-desctop) {
     display: none;
   }
+   
+//   @include mq(tablet) {
+//     padding-top: 60px;
+// }
 
+//  @include mq(mobile) {
+//     padding-top: 60px;
+// }
 
    &__shifts {
     display: flex;

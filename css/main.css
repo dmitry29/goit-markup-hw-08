@@ -308,15 +308,15 @@ body {
   padding-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .about {
-    margin-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .about {
-    margin-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -1083,6 +1083,7 @@ body {
 .nav__list--finish {
   color: var(--color-text);
   margin-left: auto;
+  padding-left: 0px;
 }
 
 .nav__list:focus::after, .nav__list:hover::after {
@@ -1486,6 +1487,7 @@ body {
 }
 
 .team__list {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

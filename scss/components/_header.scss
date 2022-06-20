@@ -54,6 +54,7 @@
     &--finish {
         color: var(--color-text);
         margin-left: auto;
+        padding-left: 0px;
     }
 
     &:focus::after,
