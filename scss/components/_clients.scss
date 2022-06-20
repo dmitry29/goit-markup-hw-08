@@ -33,6 +33,15 @@
     width: 170px;
     height: 92px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mq(mobile-only) {
+        width: 210px;
+    }
+
+     @include mq(tablet-only) {
+        width: 226px;
+    }
+
 }
 
 .client__link:hover,

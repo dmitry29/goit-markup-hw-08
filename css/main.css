@@ -310,12 +310,13 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .about {
-    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
   .about {
+    padding-bottom: 60px;
     padding-top: 60px;
   }
 }
@@ -409,9 +410,7 @@ body {
 }
 
 .shift-buttons-set {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   margin-top: 0;
   padding: 0;
   margin-left: auto;
@@ -420,7 +419,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -428,6 +426,26 @@ body {
   display: inline-block;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.shift-buttons-set__item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.shift-buttons-set__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .shift-buttons-set__item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shift-buttons-set__item {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1313,6 +1331,7 @@ body {
 }
 
 .hero__title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.65;
@@ -1395,6 +1414,18 @@ body {
   height: 92px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767.98px) {
+  .client__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .client__link {
+    width: 226px;
+  }
 }
 
 .client__link:hover,
