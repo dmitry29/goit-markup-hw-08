@@ -1798,4 +1798,11 @@ body {
     margin-bottom: 60px;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .join-in {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
