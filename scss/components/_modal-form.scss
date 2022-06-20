@@ -38,7 +38,9 @@
     }
 
   @include mq(mobile-only) {
-    width: 450px;
+    align-items: center;
+    min-height: 85%;
+    max-width: 95%;
     padding-bottom: 70px;
   }
 
