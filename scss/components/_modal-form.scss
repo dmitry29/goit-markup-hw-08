@@ -19,7 +19,7 @@
 
 .modal {
   position: absolute;
-  height: 581px;
+  
   top: 50%;
   left: 50%;
   width: 528px;
@@ -34,19 +34,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
     @include mq(tablet-only) {
-    padding-bottom: 70px;
+    max-width: 95%;
+    min-height: auto;
+    padding-bottom: 40px;
     }
 
   @include mq(mobile-only) {
     align-items: center;
-    min-height: 85%;
+    min-height: auto;
     max-width: 95%;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   @include mq(desctop) {
     width: 528px;
-    padding-bottom: 70px;
+    
   }
 
   }
@@ -104,6 +106,13 @@
 
 .form__contact {
   text-align: center;
+
+   @include mq(mobile-only) {
+    align-items: center;
+    min-height: 85%;
+    max-width: 95%;
+    
+  }
 }
 
 .form__field {
