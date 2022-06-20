@@ -38,8 +38,17 @@
     }
 
   @include mq(mobile-only) {
+    align-items: center;
+    min-height: 85%;
     max-width: 95%;
     padding-bottom: 70px;
+  }
+
+  @include mq(not-mobile) {
+    align-items: center;
+    min-height: 70%;
+    max-width: 95%;
+    padding-bottom: 100px;
   }
 
   @include mq(desctop) {
