@@ -15,10 +15,7 @@
         }
     }
 
-    // @if $type =='not-mobile' {
-    //     @media screen and (max-width: #{$mo - 0.02}) {
-    //         @content;
-    //     }
+    
 
     @if $type =='tablet-only' {
         @media screen and (min-width: $tablet) and (max-width: #{$desctop - 0.02}) {
